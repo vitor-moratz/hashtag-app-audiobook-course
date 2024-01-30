@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moratz | Audio Book</title>
+    <title>Moratz | Audiobook</title>
     <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
+
 <body>
-    <h1>Title1</h1>
-    <h2>Title2</h2>
-    <p>Text</p>
+    <div class="container-app">
+        <img src="/src/images/dom-casmurro.jpeg" alt="Dom Casmurro">
+        <div id="information-track">
+            <p id="cap">Capítulo 1</p>
+            <p id="author-name">Machado de Assis</p>
+        </div>
+        <audio id="audio-cap" src="/src/books/dom-casmurro/1.mp3"></audio>
+        <div id="container-btn">
+            <button id="back" class="bi bi-skip-backward-btn-fill"></button>
+            <button id="play-pause" class="bi bi-play-circle-fill"></button>
+            <button id="next" class="bi bi-skip-forward-btn-fill"></button>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
 </body>
 </html>
